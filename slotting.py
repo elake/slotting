@@ -126,6 +126,16 @@ def testSlot():
     for x in teams:
         print(x.skill, " ", x.getPSH())
 
+def priorityRound(sel):
+    """
+    1. Split in half by skill
+    2. Order begs ascending by unhit availability
+    3. For each beg, slot pair and recalc unhit availability
+    4a. Possibly implement some sort of bucketting system if non-optimal pairing found
+    """
+
+    
+
 a = Debater("Anne", 3)
 b = Debater("Bob", 5)
 c = Debater("Carol", 7)
